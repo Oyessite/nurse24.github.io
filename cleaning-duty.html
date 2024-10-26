@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Piket - Kelas Keperawatan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Style dasar dari index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+
+        .duty-container {
+            max-width: 1200px;
+            margin: 120px auto 40px;
+            padding: 0 20px;
+        }
+
+        .duty-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .duty-header {
+            background: #4FB6E7;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .duty-content {
+            padding: 20px;
+        }
+
+        .duty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .duty-day {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .duty-day:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .day-title {
+            color: #4FB6E7;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4FB6E7;
+        }
+
+        .duty-members {
+            list-style: none;
+        }
+
+        .duty-member {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e0e0e0;
+            display: flex;
+            align-items: center;
+        }
+
+        .duty-member:last-child {
+            border-bottom: none;
+        }
+
+        .member-avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #4FB6E7;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        .duty-rules {
+            background: #fff3cd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .rules-title {
+            color: #856404;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .rules-list {
+            list-style: none;
+        }
+
+        .rules-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .rules-list li:before {
+            content: "•";
+            color: #856404;
+            position: absolute;
+            left: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .duty-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="duty-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / Jadwal Piket
+        </div>
+
+        <!-- Jadwal Kelas A -->
+        <div class="duty-card">
+            <div class="duty-header">
+                <h2>Jadwal Piket Kelas A</h2>
+                <p>Periode Oktober - Desember 2024</p>
+            </div>
+
+            <div class="duty-content">
+                <div class="duty-grid">
+ <div class="duty-day">
+                        <h3 class="day-title">Senin</h3>
+                        <ul class="duty-members">
+                            <li class="duty-member">
+                                <span class="member-avatar">A</span>
+                                <span>Ahmad</span>
+                            </li>
+                            <li class="duty-member">
+                                <span class="member-avatar">B</span>
+                                <span>Budi</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="duty-day">
+                        <h3 class="day-title">Selasa</h3>
+                        <ul class="duty-members">
+                            <li class="duty-member">
+                                <span class="member-avatar">C</span>
+                                <span>Cici</span>
+                            </li>
+                            <li class="duty-member">
+                                <span class="member-avatar">D</span>
+                                <span>Dedi</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tambahkan hari lainnya -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Jadwal Kelas B -->
+        <div class="duty-card">
+            <div class="duty-header">
+                <h2>Jadwal Piket Kelas B</h2>
+                <p>Periode Oktober - Desember 2024</p>
+            </div>
+
+            <div class="duty-content">
+                <div class="duty-grid">
+                    <div class="duty-day">
+                        <h3 class="day-title">Senin</h3>
+                        <ul class="duty-members">
+                            <li class="duty-member">
+                                <span class="member-avatar">E</span>
+                                <span>Eko</span>
+                            </li>
+                            <li class="duty-member">
+                                <span class="member-avatar">F</span>
+                                <span>Fajar</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="duty-day">
+                        <h3 class="day-title">Selasa</h3>
+                        <ul class="duty-members">
+                            <li class="duty-member">
+                                <span class="member-avatar">G</span>
+                                <span>Gina</span>
+                            </li>
+                            <li class="duty-member">
+                                <span class="member-avatar">H</span>
+                                <span>Hana</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tambahkan hari lainnya -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Jadwal Piket Rules -->
+        <div class="duty-rules">
+            <h2 class="rules-title">Jadwal Piket Rules</h2>
+            <ul class="rules-list">
+                <li>Setiap anggota kelas A dan B wajib mengikuti jadwal piket yang telah ditentukan.</li>
+                <li>Apabila terdapat perubahan jadwal, maka akan diinformasikan melalui grup WhatsApp kelas.</li>
+                <li>Setiap anggota kelas A dan B wajib mematuhi peraturan yang berlaku.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
